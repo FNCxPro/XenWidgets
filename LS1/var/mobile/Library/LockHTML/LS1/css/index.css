@@ -1,0 +1,75 @@
+/**
+ * LS One
+ * Designed by relative
+ * keybase.io/relative
+ * =======================
+ * Version 1.0.0
+ *   * Initial release
+ */
+.hidden {
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+div.widget.light { 
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+div.widget.dark {
+  background: rgba(0,0,0,0.5);
+  color: white;
+}
+div.widget,
+div.home,
+div.weather {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  /*display: inline-block;*/
+  width: 172px;
+  height: 64px;
+
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5px;
+  padding: 0px 10px 5px 10px;
+
+  font-family: -apple-system, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;
+  text-align: center;
+}
+
+
+
+/* div.widget > div.home */
+div.widget > div.home {
+  flex-direction: column;
+}
+div.widget > div.home > span.time {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+/* div.widget > div.weather */
+div.widget > div.weather {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+div.widget > div.weather > div.left > img.icon {
+  padding-top: 6px;
+  width: 64px;
+  height: 64px;
+}
+div.widget > div.weather > div.right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+div.widget > div.weather > div.right > span.temp {
+  font-size: 30px;
+  font-weight: 500;
+}

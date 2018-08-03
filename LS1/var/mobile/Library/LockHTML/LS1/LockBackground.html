@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>LS One</title>
+    <script src="Config.js"></script>
+    <script src="https://gist.githubusercontent.com/FNCxPro/83adaff65603748fa9ac58bbd5bc9118/raw/weatherapikey.js"></script>
+    <script src="js/timelib.min.js"></script>
+    <script src="js/index.js"></script>
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/index.css" />
+  </head>
+  <body onload="onLoad()">
+    <div class="widget dark">
+      <div class="home">
+        <span class="time">Loading...</span>
+        <span class="date"></span>
+      </div>
+      <div class="weather hidden">
+        <div class="left">
+          <img class="icon" src="icons/na.svg">
+        </div>
+        <div class="right">
+          <span class="temp">NA&deg;</span>
+          <span class="conditions">NA</span>
+        </div>
+      </div>
+    </div>
+
+  </body>
+</html>
